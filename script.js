@@ -1,1 +1,1 @@
-document.getElementById("screen").innerHTML = "xdxd"
+document.getElementById("screen").value = "123456"
