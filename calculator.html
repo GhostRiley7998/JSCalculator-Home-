@@ -15,33 +15,33 @@
 
 <body>
   <div class="calculator shadow-sm bg-white rounded">
-    <input type="text" class="calculator-screen z-depth-1" id="screen" value="screen" disabled />
+    <input type="text" class="calculator-screen z-depth-1" id="screen" placeholder="Add something here..." disabled />
 
     <div class="calculator-keys">
-      <button type="button" class="operator btn btn-info" id="+" value="+">+</button>
-      <button type="button" class="operator btn btn-info" id="-" value="-">-</button>
-      <button type="button" class="operator btn btn-info" id="*" value="*">×</button>
-      <button type="button" class="operator btn btn-info" id="/" value="/">÷</button>
+      <button onclick="Plus()" type="button" class="operator btn btn-info" id="+" value="+">+</button>
+      <button onclick="Subtract()" type="button" class="operator btn btn-info" id="-" value="-">-</button>
+      <button onclick="Multiply()" type="button" class="operator btn btn-info" id="*" value="*">×</button>
+      <button onclick="Divide()" type="button" class="operator btn btn-info" id="/" value="/">÷</button>
 
-      <button type="button" value="7" class="btn keys-color waves-effect" id="7" value="7">7</button>
-      <button type="button" value="8" class="btn keys-color waves-effect" id="8" value="8">8</button>
-      <button type="button" value="9" class="btn keys-color waves-effect" id="9" value="9">9</button>
+      <button onclick="seven()" type="button" value="7" class="btn keys-color waves-effect" id="7" value="7">7</button>
+      <button onclick="eight()" type="button" value="8" class="btn keys-color waves-effect" id="8" value="8">8</button>
+      <button onclick="nine()" type="button" value="9" class="btn keys-color waves-effect" id="9" value="9">9</button>
+      
+      <button onclick="four()" type="button" value="4" class="btn keys-color waves-effect" id="4" value="4">4</button>
+      <button onclick="five()" type="button" value="5" class="btn keys-color waves-effect" id="5" value="5">5</button>
+      <button onclick="six()" type="button" value="6" class="btn keys-color waves-effect" id="6" value="6">6</button>
 
-      <button type="button" value="4" class="btn keys-color waves-effect" id="4" value="4">4</button>
-      <button type="button" value="5" class="btn keys-color waves-effect" id="5" value="5">5</button>
-      <button type="button" value="6" class="btn keys-color waves-effect" id="6" value="6">6</button>
+      
+      <button onclick="one()" type="button" value="1" class="btn keys-color waves-effect" id="1" value="1">1</button>
+      <button onclick="two()" type="button" value="2" class="btn keys-color waves-effect" id="2" value="2">2</button>
+      <button onclick="three()" type="button" value="3" class="btn keys-color waves-effect" id="3" value="3">3</button>
 
 
-      <button type="button" value="1" class="btn keys-color waves-effect" id="1" value="1">1</button>
-      <button type="button" value="2" class="btn keys-color waves-effect" id="2" value="2">2</button>
-      <button type="button" value="3" class="btn keys-color waves-effect" id="3" value="3">3</button>
+      <button onclick="decimal()" type="button" class="decimal function btn btn-secondary" value=".">.</button>
+      <button onclick="zero()" type="button" value="0" class="btn keys-color waves-effect">0</button>
+      <button onclick="ac()" type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
 
-
-      <button type="button" value="0" class="btn keys-color waves-effect">0</button>
-      <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
-      <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
-
-      <button type="button" class="equal-sign operator btn calculate-key" value="=">=</button>
+      <button onclick="calc()" type="button" class="equal-sign operator btn calculate-key" value="=">=</button>
     </div>
   </div>
   <!-- JavaScript always stays at the bottom -->
